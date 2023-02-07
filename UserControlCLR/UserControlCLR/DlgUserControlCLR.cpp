@@ -11,10 +11,21 @@
 
 CB_FUNCTION g_cbFunction = NULL;
 
-void CB_Event(int iX, int iY, double dR)
+//void CB_Event(int iX, int iY, double dR)
+//{
+//	if (g_cbFunction)
+//		g_cbFunction(iX, iY, dR);
+//}
+
+void CB_MoveEvent(float fX, float fY, float fR)
 {
 	if (g_cbFunction)
-		g_cbFunction(iX, iY, dR);
+		g_cbFunction(fX, fY, fR);
+}
+
+bool CB_MoveDoneEvent()
+{
+	
 }
 
 IMPLEMENT_DYNAMIC(CDlgUserControlCLR, CDialog)
@@ -64,6 +75,8 @@ BOOL CDlgUserControlCLR::InitWindow(CWnd* pWndParent)
 	ShowWindow(SW_HIDE);
 
 	//m_TPKUC->DoCallbackEvent += gcnew UserControl1::DelCallback(CB_Event);
+	m_TPKUC->AOI_Move += gcnew frmAOI_UI::DelMoveCallback(CB_MoveEvent);
+	m_TPKUC->AOI_MoveDone += gcnew frmAOI_UI::DelMoveDoneCallback(CB_MoveDoneEvent);
 
 	return TRUE;
 }
