@@ -1,0 +1,12 @@
+[Build results]
+obj/
+.vs/
+x64/
+[Dd]ebug/
+
+[Ext]
+*.pdb
+*.exp
+*.suo
+*.user
+*.aps
