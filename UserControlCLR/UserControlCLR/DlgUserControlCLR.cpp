@@ -25,7 +25,7 @@ void CB_MoveEvent(float fX, float fY, float fR)
 
 bool CB_MoveDoneEvent()
 {
-	
+	return false;
 }
 
 IMPLEMENT_DYNAMIC(CDlgUserControlCLR, CDialog)

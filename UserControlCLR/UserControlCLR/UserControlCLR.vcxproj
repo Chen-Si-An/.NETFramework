@@ -23,7 +23,7 @@
     <ProjectGuid>{54535245-8815-4769-A2DA-B8CD12F49CCC}</ProjectGuid>
     <Keyword>MFCDLLProj</Keyword>
     <RootNamespace>UserControlCLR</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
     <TargetFramework>NET7.0</TargetFramework>
     <TargetFrameworkVersion>4.8</TargetFrameworkVersion>
   </PropertyGroup>
@@ -47,7 +47,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Dynamic</UseOfMfc>
     <CLRSupport>true</CLRSupport>

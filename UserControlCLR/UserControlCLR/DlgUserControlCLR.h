@@ -3,7 +3,7 @@
 
 using namespace TPK_Laser;
 
-typedef void (*CB_FUNCTION)(int, int, double);
+typedef void (*CB_FUNCTION)(float, float, float);
 
 // CDlgUserControlCLR 對話方塊
 
