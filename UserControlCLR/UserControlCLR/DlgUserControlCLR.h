@@ -2,6 +2,7 @@
 #include "afxwinforms.h"
 
 using namespace TPK_Laser;
+//using namespace ClassLibrary1;
 
 typedef void (*CB_FUNCTION)(float, float, float);
 
@@ -30,6 +31,7 @@ public:
 	virtual void OnCancel();
 
 	CWinFormsControl<frmAOI_UI> m_TPKUC;	//在CLR層宣告C#類別
+	//CWinFormsControl<UserControl1> m_TPKUC;	//在CLR層宣告C#類別
 
 	BOOL InitWindow(CWnd* pWndParent);
 	BOOL InitUserControl(int iX, int iY, int iViewWidth, int iViewHeight);

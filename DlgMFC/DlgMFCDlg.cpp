@@ -7,6 +7,7 @@
 #include "DlgMFC.h"
 #include "DlgMFCDlg.h"
 #include "afxdialogex.h"
+#include "DlgView.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -119,6 +120,8 @@ BOOL CDlgMFCDlg::OnInitDialog()
 BOOL CDlgMFCDlg::DestroyWindow()
 {
 	m_FreeDialog(m_lptrDlgCLR);
+	delete m_pView;
+	m_pView = NULL;
 
 	return CDialogEx::DestroyWindow();
 }
@@ -236,11 +239,13 @@ void CDlgMFCDlg::InitCCD()
 	if (m_SetCbFunc)
 		m_SetCbFunc(m_lptrDlgCLR, (LONG_PTR)CB_Function);
 
-	HWND hCLRDisplayWnd = (HWND)m_lptrDlgCLR;
-	::SetParent(hCLRDisplayWnd, GetDlgItem(IDC_STATIC_CCD)->m_hWnd);
+	HWND hCLRDisplayWnd = m_GetHandle(m_lptrDlgCLR);
+	//::SetParent(hCLRDisplayWnd, m_hWnd);
 	//CWnd *pWnd = FromHandle(hCLRDisplayWnd);
 	//pWnd->ShowWindow(SW_SHOW);
-	m_ShowView(m_lptrDlgCLR, TRUE);
+	//m_ShowView(m_lptrDlgCLR, TRUE);
+	m_pView = new CDlgView;
+	m_pView->InitWindow(rectView, this, hCLRDisplayWnd);
 }
 
 

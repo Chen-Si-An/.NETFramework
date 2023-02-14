@@ -86,7 +86,8 @@ BOOL CDlgUserControlCLR::InitUserControl(int iX, int iY, int iViewWidth, int iVi
 {
 	if (m_TPKUC.m_hWnd)
 	{
-		MoveWindow(iX, iY, iViewWidth, iViewHeight);
+		//MoveWindow(iX, iY, iViewWidth, iViewHeight);
+		MoveWindow(0, 0, iViewWidth, iViewHeight);
 		GetDlgItem(IDC_BUTTON_DISPLAY)->SetWindowPos(NULL, 0, 0, iViewWidth, iViewHeight, SWP_NOMOVE);
 	}
 

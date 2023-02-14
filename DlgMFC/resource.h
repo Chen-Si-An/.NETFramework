@@ -7,6 +7,7 @@
 #define IDS_ABOUTBOX                    101
 #define IDD_DLGMFC_DIALOG               102
 #define IDD_CDlgLaserFrmCLR             103
+#define IDD_DIALOG_VIEW                 104
 #define IDR_MAINFRAME                   128
 #define IDC_STATIC_CCD                  1000
 #define IDC_BUTTON_GREEN                1001
@@ -22,6 +23,6 @@
 #define _APS_NEXT_RESOURCE_VALUE        130
 #define _APS_NEXT_COMMAND_VALUE         32771
 #define _APS_NEXT_CONTROL_VALUE         1004
-#define _APS_NEXT_SYMED_VALUE           104
+#define _APS_NEXT_SYMED_VALUE           105
 #endif
 #endif

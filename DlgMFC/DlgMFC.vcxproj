@@ -23,7 +23,7 @@
     <ProjectGuid>{9E1BAD67-229E-460A-88B7-087F249276F2}</ProjectGuid>
     <Keyword>MFCProj</Keyword>
     <RootNamespace>DlgMFC</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <TargetFrameworkVersion>
     </TargetFrameworkVersion>
     <TargetFramework>net6.0</TargetFramework>
@@ -189,6 +189,7 @@
   <ItemGroup>
     <ClInclude Include="DlgMFC.h" />
     <ClInclude Include="DlgMFCDlg.h" />
+    <ClInclude Include="DlgView.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
@@ -197,6 +198,7 @@
   <ItemGroup>
     <ClCompile Include="DlgMFC.cpp" />
     <ClCompile Include="DlgMFCDlg.cpp" />
+    <ClCompile Include="DlgView.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

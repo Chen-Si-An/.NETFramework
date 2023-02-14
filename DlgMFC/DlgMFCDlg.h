@@ -17,6 +17,8 @@ typedef void(__stdcall* SET_CB_FUNC)(LONG_PTR lLibPtr, LONG_PTR func);
 
 typedef void(__stdcall* MARK_FINDER_SHOW)(LONG_PTR lLibPtr, LONG_PTR func);
 
+class CDlgView;
+
 
 // CDlgMFCDlg 對話方塊
 class CDlgMFCDlg : public CDialogEx
@@ -64,6 +66,7 @@ public:
 	BOOL LoadLaserCLRLib();
 
 	LONG_PTR m_lptrDlgCLR;
+	CDlgView *m_pView;
 	void InitCCD();
 	void ChangeEditorValue(int iX, int iY, double dR);
 
